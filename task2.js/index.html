@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task two js</title>
+    
+    <style>
+  
+
+    .hello{
+            border: 1px solid;
+            background-color: yellow;
+            width: 40%;
+            height: 40px;
+            text-align: center;
+            padding-top: 15px;
+        }
+</style>
+</head>
+<body>
+    <h3 class="hello" onmouseover="this.innerHTML ='Hello World !'" onmouseout="this.innerHTML ='Can I Help you ?'" > Can I Help you ? </h3>
+    <hr>
+
+
+
+    <select name="fonts" id="Family" onchange="changeFont()">
+        <option value="Times New Roman">Times New Roman</option>
+        <option value="Fantasy">Fantasy</option>
+    </select>
+
+
+    <select name="Size" id="Size" onchange="changeSize()">
+        <option value="10px">10px</option>
+        <option value="15px">15px</option>
+    </select>
+
+
+    <input type="checkbox" id="italic" onchange="changeToItalic()">
+    <label for="italic">Italic</label>
+
+    <input type="checkbox" id="bold" onchange="changeToBold ()">
+    <label for="bold">Bold</label>
+
+    <input type="checkbox" id="underline" onchange="changeToUnderline()">
+    <label for="underline">Underline</label>
+
+    <br><br>
+
+    <p id="p" style="border: 3px solid; width: 40%; height: 60px; padding-left: 6px; padding-top: 7px;" >  the quick brown fox over the lazy dog </p>
+
+
+
+    <script src="task2.js"></script>
+</body>
+</html>
