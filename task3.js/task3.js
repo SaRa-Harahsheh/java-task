@@ -193,3 +193,45 @@ Ex: canIGetADrivingLicense(20)
 => "yes you can"
 
 */
+let x=3;
+function canIGetADrivingLicense (age) {
+    if (age>=20) {
+        console.log("yes you can ")
+    
+    }else if( age<20){
+      presentAge=20-age;
+      console.log("please come back after ",presentAge,"years to get one")  
+    }
+    
+}
+canIGetADrivingLicense(21);
+canIGetADrivingLicense(17);
+canIGetADrivingLicense(11);
+
+
+
+
+
+/*
+10
+Write a function called sameLength
+that accepts two strings as arguments,
+and returns true if those strings have the same length, and false otherwise.
+
+**hint: how we can know string length   Ex: : "tree".length   => 4
+
+Ex: sameLength("tree","clue")
+=> true
+
+Ex: sameLength("tree","car")
+=> false
+*/
+
+function sameLength(string1,string2) {
+  
+    return string1.length===string2.length
+     
+        
+}
+console.log (sameLength("tree","clue"));
+console.log(sameLength("tree","car"));
