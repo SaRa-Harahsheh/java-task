@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4js</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.card {
+    border: 1px solid #121111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <h2>Display the form in one card using local Storage</h2>
+    <form id="infoForm" style="border: .2vh solid black;">
+        <label for="name">Name : </label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="age">Age : </label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender"> Gender :</label>
+        <input type="text" id="gender" name="gender"><br><br>
+        <label for="birthDate">Birth Date : </label>
+        <input type="date" id="birthDate" name="birthDate"><br><br>
+        <label for="image">Upload Your Image : </label>
+        <input type="file" id="image" name="image"><br><br>
+        <label for="description">Description :</label>
+        <input type="text" id="description" name="description"><br><br>
+        <label for="major">Major & Unversity : </label>
+        <input type="text" id="major" name="major"><br><br>
+        <label for="programmingLanguages">programming Languages :</label>
+        <input type="checkbox" id="html" name="programmingLanguages" value="HTML"> HTML
+        <input type="checkbox" id="css" name="programmingLanguages" value="CSS"> CSS
+        <input type="checkbox" id="js" name="programmingLanguages" value="JavaScript"> JavaScript<br><br>
+        <label for="siblingsNumber">siblings Number :</label>
+        <input type="number" id="siblingsNumber" name="siblingsNumber"><br><br>
+        <label for="siblingsDescription"> Description of siblings :</label>
+        <input type="text" id="siblingsDescription" name="siblingsDescription"><br><br>
+        <button type="button" onclick="saveData()"> Submit </button>
+    </form>
+
+
+<div class="card" id="displayCard" style="display:none;">
+    <h2> Saved data</h2>
+    <p id="displayName"></p>
+    <p id="displayAge"></p>
+    <p id="displayGender"></p>
+    <p id="displayBirthDate"></p>
+    <img id="displayImage" src="" alt="الصورة">
+    <p id="displayDescription"></p>
+    <p id="displayMajor"></p>
+    <p id="displayProgrammingLanguages"></p>
+    <p id="displaySiblingsNumber"></p>
+    <p id="displaySiblingsDescription"></p>
+</div>
+    <script src="task4.js"></script>
+</body>
+</html>

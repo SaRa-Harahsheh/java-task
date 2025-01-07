@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5.js</title>
+
+
+
+
+  <style>
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <form id="myForm">
+    <label>Enter a Fname:</label>
+    <br>
+    <input type="text" id="fname" onblur="validateFname()">
+    <span id="fnameError" class="error"></span><br><br>
+
+    <label>Enter a Lname: </label>
+    <br>
+    <input type="text" id="lname"><br><br>
+
+    <label>Enter a Bdate: </label>
+    <br>
+    <input type="text" id="bdate" placeholder="dd/mm/yyyy" onblur="validateBdate()">
+    <span id="bdateError" class="error"></span><br><br>
+
+    <label>Enter an email: </label>
+    <br>
+    <input type="email" id="email" onblur="validateEmail()">
+    <span id="emailError" class="error"></span><br><br>
+
+    <label>Confirm Email: </label>
+    <br>
+    <input type="email" id="confirmEmail" onblur="validateConfirmEmail()">
+    <span id="confirmEmailError" class="error"></span><br><br>
+
+    <label>Password:</label>
+    <br>
+    
+    <input type="password" id="password"><br><br>
+
+    <label>Confirm password:</label>
+    <br>
+    <input type="password" id="confirmPassword" onblur="validatePassword()">
+    <span id="confirmPasswordError" class="error"></span><br><br>
+  </form>
+  <script src="task5.js"></script>  
+</body>
+</html>
